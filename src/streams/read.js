@@ -1,7 +1,7 @@
-import { createReadStream } from "fs";
-import { dirname, join } from "path";
-import { pipeline } from "stream/promises";
-import { fileURLToPath } from "url";
+import { createReadStream } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { pipeline } from 'node:stream/promises';
+import { fileURLToPath } from 'node:url';
 
 const read = async () => {
   const __dirname = dirname(fileURLToPath(import.meta.url));

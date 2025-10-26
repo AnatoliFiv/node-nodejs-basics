@@ -1,6 +1,6 @@
-import { access, rename as fsRename } from 'fs/promises';
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
+import { access, rename as fsRename } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const rename = async () => {
   const __filename = fileURLToPath(import.meta.url);

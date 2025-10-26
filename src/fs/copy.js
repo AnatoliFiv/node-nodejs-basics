@@ -1,6 +1,6 @@
-import { cp } from "fs/promises";
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
+import { cp } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const copy = async () => {
   const __dirname = dirname(fileURLToPath(import.meta.url));

@@ -1,7 +1,7 @@
-import { createWriteStream } from "fs";
-import { dirname, join } from "path";
-import { pipeline } from "stream/promises";
-import { fileURLToPath } from "url";
+import { createWriteStream } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { pipeline } from 'node:stream/promises';
+import { fileURLToPath } from 'node:url';
 
 const write = async () => {
   const __dirname = dirname(fileURLToPath(import.meta.url));

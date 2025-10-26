@@ -1,6 +1,6 @@
-import { unlink } from "fs/promises";
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
+import { unlink } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const remove = async () => {
   const __dirname = dirname(fileURLToPath(import.meta.url));
